@@ -11,7 +11,7 @@ const userSchema = new mongoose.Schema(
     isActive: { type: Boolean, default: true },
 
     // ── New student fields ─────────────────────────
-    username:         { type: String, unique: true, sparse: true, trim: true },
+    username:         { type: String, unique: true, sparse: true, trim: true, default: undefined},
     phone:            { type: String, trim: true },
     aadharNumber:     { type: String, trim: true },
     permanentAddress: { type: String, trim: true },

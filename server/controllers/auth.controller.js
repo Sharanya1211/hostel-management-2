@@ -46,15 +46,17 @@ exports.register = async (req, res) => {
     // Password is hashed automatically by the pre save hook in User model
     // Do NOT hash manually here — that would cause double hashing
     const user = await User.create({
-      name, email, password,
-      role:             role || "student",
-      username,
-      phone,
-      aadharNumber,
-      permanentAddress,
-      studentId,
-      course,
-    });
+  name,
+  email,
+  password,
+  role:             role || "student",
+  username:         username || undefined,
+  phone:            phone    || undefined,
+  aadharNumber:     aadharNumber     || undefined,
+  permanentAddress: permanentAddress || undefined,
+  studentId:        studentId        || undefined,
+  course:           course           || undefined,
+});
 
     const token = signToken(user._id);
     res.status(201).json({ success: true, token, user: userResponse(user) });
