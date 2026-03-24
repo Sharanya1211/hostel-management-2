@@ -47,10 +47,10 @@ export default function Landing() {
       {/* ── Hero ── */}
       <section style={{ textAlign: "center", padding: "80px 48px 60px", borderBottom: "1px solid #e2e8f0" }}>
         <div style={{ display: "inline-block", padding: "6px 16px", background: "#eff6ff", border: "1px solid #bfdbfe", borderRadius: 20, fontSize: 12, fontWeight: 700, color: "#1e40af", marginBottom: 20, letterSpacing: "0.05em" }}>
-          🎓 INDIA'S #1 STUDENT HOSTEL PLATFORM
+          🎓 INDIA'S #1 SMART HOSTEL RESERVATION PLATFORM
         </div>
 
-        <div style={{ fontSize: 13, fontWeight: 700, color: "#1e40af", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 16 }}>
+        <div style={{ fontSize: 18, fontWeight: 700, color: "#1e40af", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: 16 }}>
           Smart Hostel Reservation Platform
         </div>
 
